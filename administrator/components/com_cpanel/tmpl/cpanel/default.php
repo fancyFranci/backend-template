@@ -34,10 +34,10 @@ echo HTMLHelper::_(
 		'bodyHeight'  => '70',
 		'modalWidth'  => '80',
 		'footer'      => '<button type="button" class="button-cancel  btn btn-sm btn-danger" data-dismiss="modal" data-target="#closeBtn" aria-hidden="true">'
-            . '<span class="icon-cancel" aria-hidden="true"></span>'
+			. '<span class="icon-cancel" aria-hidden="true"></span>'
 			. Text::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</button>'
 			. '<button type="button" class="button-save  btn btn-sm btn-success hidden" data-target="#saveBtn" aria-hidden="true">'
-            . '<span class="icon-save" aria-hidden="true"></span>'
+			. '<span class="icon-save" aria-hidden="true"></span>'
 			. Text::_('JSAVE') . '</button>',
 	)
 );
@@ -46,11 +46,11 @@ echo HTMLHelper::_(
 <?php if ($this->quickicons) : ?>
 <div class="cpanel-modules <?php echo $this->position; ?>-quickicons">
 	<div class="card-columns">
-    <?php // Display the icon position modules
-    foreach ($this->quickicons as $iconmodule)
-    {
-        echo ModuleHelper::renderModule($iconmodule, array('style' => 'quickicon'));
-    }
+	<?php // Display the icon position modules
+	foreach ($this->quickicons as $iconmodule)
+	{
+		echo ModuleHelper::renderModule($iconmodule, array('style' => 'quickicon'));
+	}
 	?>
 	</div>
 </div>
